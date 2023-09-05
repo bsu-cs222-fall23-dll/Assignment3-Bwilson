@@ -5,10 +5,10 @@ public class SillyMethods {
     }
     public String countTo(int index) {
         StringBuilder Array = new StringBuilder();
-        for (int i = 0; i < index; i++) {
+        for (int i = 0; i <= index; i++) {
             Array.append(i);
-            if (i != index - 1){
-                Array.append(",");
+            if (i != index){
+                Array.append(" ");
             }
         }
         return Array.toString();
