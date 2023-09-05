@@ -3,12 +3,14 @@ public class SillyMethods {
     public boolean didGuess42(int guess){
         return guess == 42;
     }
-    public int countTo(int index) {
-        int[] listedNumbers = new int[index];
+    public String countTo(int index) {
+        StringBuilder Array = new StringBuilder();
         for (int i = 0; i < index; i++) {
-            listedNumbers[i] = i + 1;
-        return listedNumbers[];
-
+            Array.append(i);
+            if (i != index - 1){
+                Array.append(",");
+            }
         }
+        return Array.toString();
     }
 }
